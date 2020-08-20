@@ -1,0 +1,29 @@
+{
+			module: "MMM-AssistantMk2",
+			position: "top_right",
+			  config: {
+			  debug: false,
+			  startChime: "connection.mp3",
+			  useWelcomeMessage: "",
+			  lang: "ko-KR",
+			  coordinates: {
+				latitude: 36.333328,
+				longitude: 127.416672,
+			  },
+			  standbyStatic: false,
+			  record: {
+				recorder : "arecord",
+				device : "plughw:2"
+			  },
+			  play: {
+				playProgram: "mpg321",
+				playOption: [],
+			  },
+			  snowboy: {
+				audioGain: 2.0,
+				Frontend: true,
+				Model: "smart_mirror",
+				Sensitivity: 1.0
+			  }
+			}
+},
