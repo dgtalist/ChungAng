@@ -1,4 +1,0 @@
-$ cd ~/MagicMirror/modules
-~/modules $ git clone https://github.com/bugsounet/MMM-AssistantMk2
-~/modules $ cd MMM-AssistantMk2
-~/MMM-AssistantMK2 $ npm install
