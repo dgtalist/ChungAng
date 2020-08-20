@@ -1,7 +1,0 @@
-$ curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
-$ sudo apt install -y nodejs
-$ git clone https://github.com/MichMich/MagicMirror
-$ cd MagicMirror/
-~/MagicMirror$ npm install
-~/MagicMirror$ cp config/config.js.sample config/config.js
-~/MagicMirror$ npm run start
