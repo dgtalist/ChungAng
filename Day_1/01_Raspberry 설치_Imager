@@ -1,0 +1,35 @@
+IMAGER 를 이용한 Rasbian 설치 매뉴얼입니다.
+
+1. Raspberry 설치용 Imager 프로그램 다운로드 및 설치 : www.raspberrypi.org/downloads/
+   - 설치를 진행할 운영체제에 맞춰 설치 및 실행 : windows / macOS
+   
+2. microSD 카드 삽입 후 Imager를 통해 운영체제 설치
+   - Operating System : Raspberry PI OS(32-bit)
+   - SD card : 16 or 32GB
+   - WRITE : click
+   * 설치는 안정적인 인터넷 환경 내에서 진행해주시고, 복사와 검증 과정 중에는 되도록 조작 금지
+
+3. Raspberry 보드에 키보드 마우스 동글, microSD 카드 삽입, 모니터 전원 on, HDMI 모니터케이블 연결 후에 보드에 전원 인가
+
+4. 부팅이 완료된 후 국가 설정은 South Korea 로 변경, 이후 Korea 및 Seoul 확인
+   * 시스템 운영 상 운영체제 언어는 'Use English language' 를 체크
+   * 국가를 korea 로 선택 시 wifi 연결이 5G 우선 또는 5G만 선택이 되므로 wifi 상태 확인 및 유선(랜선) 설치를 추천
+   
+5. 화면사이즈 skip > 패스워드 설정 > 와이파이 설정 ... RESTART
+
+6. 한글 언어패키지 설치 및 설정
+   - $ sudo apt-get install ibus
+   - $ sudo apt-get install ibus-hangul
+   - $ sudo apt-get install fonts-unfonts-core
+   - $ reboot
+   
+7. 재부팅 후 한글 언어 추가
+   - 메인메뉴 > Preference > iBus Preferences > Input Method 의 추가에서 hangul 추가
+  
+8. 시스템 최적화를 위해 업데이트 및 업그레이드 진행
+   - $ sudo apt-get upgrade
+   - $ sudo apt-get update
+   - $ sudo rpi-update
+
+*** 라즈비안 개발 취지 상 프로젝트 개발 후 Github 에 프로젝트를 등록하기 위한 임베디드보드입니다.
+*** 특성 상 파일시스템구조의 에러나 문제가 발생되는 경우 fix 보다는 향후 안정적인 추가 개발을 위해 빈번하게 초기화를 진행하는 경우가 많습니다.
