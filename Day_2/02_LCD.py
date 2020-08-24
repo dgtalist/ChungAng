@@ -22,5 +22,6 @@ except KeyboardInterrupt:
     
 [ 라이브러리 설치 ]
 $ git clone https://github.com/the-raspberry-pi-guy/lcd
+$ cd lcd
 ~/lcd $ sudo sh install.sh
 ~/lcd $ reboot
