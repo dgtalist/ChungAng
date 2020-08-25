@@ -6,7 +6,7 @@
 
 2. $ sudo apt-get upgrade
 
-3. $ sudo rpi-update
+3. $ sudo rpi-update # 업데이트 내용이 많
 
 4. SWAPSIZE change
   pi@raspberrypi:~ /opencv/opencv-4.1.2/build $ sudo nano /etc/dphys-swapfile
