@@ -1,1 +1,19 @@
 https://github.com/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi
+
+[tfLite setup]
+1. sudo apt-get update
+2. sudo apt-get upgrade
+3. git clone https://github.com/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi.git
+4. mv TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi/ tfLite1
+5. cd tfLite1
+6. sudo pip3 install virtualenv
+7. python3 -m venv tfLite1-env
+8. source tfLite1-env/bin/activate
+9. bash get_pi_requirements.sh
+
+[google sample models]
+10. wget https://storage.googleapis.com/download.tensorflow.org/models/tflite/coco_ssd_mobilenet_v1_1.0_quant_2018_06_29.zip
+
+11. unzip coco_ssd_mobilenet_v1_1.0_quant_2018_06_29.zip -d Sample_TFLite_model
+12. python3 TFLite_detection_webcam.py --modeldir Sample_TFLite_model
+13. python3 TFLite_detection_video.py --modeldir Sample_TFLite_model --video=test.mp4
