@@ -1,0 +1,43 @@
+sudo nano /etc/motion/motion.conf  -> 설정,,,, 컨트롤 W 누르면 검색할수 있다.. 
+
+daemon                       ->   on   프로그램을 백그라운드에서 별도로 실행가능 
+
+framerate                     -> 100 
+
+stream_maxrate             ->100 
+
+stream_port                  ->8081  송출 포트번호 설정 
+
+stream_quality               -> 100 
+
+webcontrol_localhost on   ->  off   로컬호스트에서만 연결을 제한하지 않도록 
+
+stream_localhost on        ->   off  로컬에만 사용할지(on) 다른 컴이나 장비로 접속할지(off) 
+
+quality                         ->100 
+
+post_capture                 ->5 
+
+output_pictures on          ->  off 영상을 저장할지, 저장하면 끊김 
+
+ffmpeg_output)movies on ->  off 실시간 mpeg 인코딩 라이브러리(ffmpeg)  
+
+stream_motion on  움직임이 없으면 1프레임, 감지되면 stream_maxrate 값으로.. 
+
+stream_maxrate 100  감지되는 초당 횟수 
+
+sudo nano /etc/default/motion 
+
+start_motion_daemon->yes 데몬 모션 사용 
+
+sudo service motion start 
+
+sudo motion  시작 
+
+  
+
+종료하고 끝내려면 
+
+sudo service motion stop 
+
+sudo service motion restart 
