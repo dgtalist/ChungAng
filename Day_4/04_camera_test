@@ -1,0 +1,2 @@
+sudo raspistill -o test.jpg
+sudo raspivid –o video.h264
