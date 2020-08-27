@@ -1,7 +1,5 @@
 import RPi.GPIO as GPIO
 import time
-
-GPIO.cleanup()
 #Delay time
 t = 0.01
 #Set Used GPIO
